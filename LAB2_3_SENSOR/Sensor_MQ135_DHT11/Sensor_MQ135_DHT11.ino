@@ -4,8 +4,6 @@ A0: đầu vào của cảm biến MQ135
 A1: đầu vào của cảm biến DHT
 
 */
-
-
 #include <MQ135.h>
 #include <dht.h>
 
