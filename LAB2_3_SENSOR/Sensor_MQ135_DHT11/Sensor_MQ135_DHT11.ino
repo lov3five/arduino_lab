@@ -57,11 +57,11 @@ void loop() {
   Serial.print(correctedRZero);
   Serial.print("\t Resistance: ");
   Serial.print(resistance);
-  Serial.print("\t PPM: ");
+  /* Serial.print("\t PPM: ");
   Serial.print(ppm);
   Serial.print("\t Corrected PPM: ");
   Serial.print(correctedPPM);
-  Serial.println("ppm");
+  Serial.println("ppm"); */
  
   delay(500);
 }
