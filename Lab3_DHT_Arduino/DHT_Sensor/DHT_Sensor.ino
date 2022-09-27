@@ -3,14 +3,17 @@ dht DHT;
 //Khai báo chân Pin cho DHT11 = 4
 #define DHT11_PIN 4
 
-int PIN_LED1 = 12
-int PIN_LED2 = 13
+int PIN_LED1 = 12;
+int PIN_LED2 = 13;
 
 //Hàm khởi tạo
 void setup()
 {
 //Đặt tốc độ dữ liệu = 1152000 tính bằng bit trên giây (baud) để truyền dữ liệu nối tiếp.
 Serial.begin(115200);
+pinMode(PIN_LED1, OUTPUT);
+pinMode(PIN_LED2, OUTPUT);
+
 //In ra màn hình title
 Serial.println("Type\tstatus\tHumidity (%)\tTemperature (C)");
 }
@@ -29,11 +32,11 @@ if(DHT.temperature >= 25){
 else {
   digitalWrite(PIN_LED1, LOW);
 }
-if(DHT.humidity >= 50){
+if(DHT.humidity >= 75){
   digitalWrite(PIN_LED2, HIGH);
 }
 else {
   digitalWrite(PIN_LED2, LOW);
 }
-delay(2000);
+delay(1000);
 }
