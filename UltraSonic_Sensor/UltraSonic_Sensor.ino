@@ -4,11 +4,11 @@ const int ECHO_PIN = 7; //Chân Trig = chân 7 Uno
 int TIME_OUT =  5000; //convert to 5s
 
 //Hàm tính khoảng cách cm
-float countDistance(int triggerPin,int echoPin){
+float countDistance(int triggerPin, int echoPin){
   long duration, distance;
   digitalWrite(triggerPin,  HIGH); // Phát 1 xung 10 micro giây  từ chân Trig
   delayMicroseconds(10);
-  digitalWrite(TtriggerPin,  LOW); // Clear
+  digitalWrite(triggerPin,  LOW); // Clear
   // Thời gian tín hiệu phản hồi lại chân Echo
   duration = pulseIn(echoPin, HIGH, TIME_OUT);
   distance = duration / 29.1 / 2;
