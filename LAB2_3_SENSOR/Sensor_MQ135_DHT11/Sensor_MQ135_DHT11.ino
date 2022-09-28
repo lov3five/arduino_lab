@@ -46,7 +46,7 @@ void loop() {
   else {
     digitalWrite(PIN_LED1, LOW);
   }
-  if (humidity >= 75) {
+  if (humidity >= 60) {
     digitalWrite(PIN_LED2, HIGH);
   }
   else {
